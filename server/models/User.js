@@ -18,6 +18,12 @@ const userSchema = new Schema({
         required: true,
         minlength: 4,
     },
+    comments: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'user',
+        }
+    ]
 });
     // if we save teams ill make a saveTeams: [{}]
 
