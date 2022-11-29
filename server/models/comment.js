@@ -17,10 +17,11 @@ const commentSchema = new Schema({
     },
         
     reactions: [reaction],
-    },
-);
+    
+    
+});
 // thoughtSchema.virtual('reactionCount').get(function () {
 //     return this.reactions.length
 // });
 const Comment = model('Comment', commentSchema);
-module.export = Comment;
+module.exports = Comment;
