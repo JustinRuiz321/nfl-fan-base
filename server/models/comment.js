@@ -15,10 +15,7 @@ const commentSchema = new Schema({
         type: String,
         required: true
     },
-        
-    reactions: [reaction],
-    
-    
+           
 });
 // thoughtSchema.virtual('reactionCount').get(function () {
 //     return this.reactions.length
