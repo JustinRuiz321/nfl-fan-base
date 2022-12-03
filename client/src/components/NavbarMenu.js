@@ -18,23 +18,23 @@ export default function NavbarMenu() {
     <>
       <Navbar bg="dark">
         <Container>
-          <Navbar.Brand className='text-white'>
+          <Navbar.Brand className='text-white gfont'>
             NFL-Fan-Base
           </Navbar.Brand>
           <Nav>
-            <Nav.Link><NavLink to="/">Home</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/" className="navLink" >Home</NavLink></Nav.Link>
             {Auth.loggedIn() ? (
               <>
                 <Nav.Link to='/gamedata'>
-                  Game Data
+                  <NavLink className="navLink">Game Data</NavLink>
                 </Nav.Link>
                 <Nav.Link to='/blog'>
-                  Blog
+                  <NavLink className="navLink">Blog</NavLink>
                 </Nav.Link>
                 <Nav.Link onClick={Auth.logout}><NavLink>Logout</NavLink></Nav.Link>
               </>
             ) : (
-              <Nav.Link onClick={() => setShowExtraNav(true)}><NavLink>Login/Sign Up</NavLink></Nav.Link>
+              <Nav.Link className="" onClick={() => setShowExtraNav(true)}><NavLink className="navLink">Login/Sign Up</NavLink></Nav.Link>
             )}
             <Modal
               size='lg'
@@ -42,7 +42,7 @@ export default function NavbarMenu() {
               onHide={() => setShowExtraNav(false)}
               aria-labelledby='signup-modal'>
 
-                
+
               <Tab.Container defaultActiveKey='login'>
                 <Modal.Header closeButton>
                   <Modal.Title id='signup-modal'>

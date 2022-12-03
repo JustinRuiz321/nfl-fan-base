@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -48,13 +49,23 @@ img {
   justify-content: center;
 }
 
+.C-T{
+  text-align: center;
+}
+
 .HHC{
   margin: 1.875rem;
   text-align: center;
+  font-family: 'Zen Dots', cursive;
 }
 
 .footer-style{
   text-align: center;
+  height: 300px;
+}
+
+.f-spacing{
+padding: 2.5%;
 }
 
 .cardWidth {
@@ -111,3 +122,27 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
 } */
 
+.gfont{
+  font-family: 'Zen Dots', cursive;
+}
+
+.navLink{
+  margin-left: 10px;
+  box-shadow: inset 0 0 0 0 white;
+  color: white;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.navLink:hover{
+box-shadow: inset 100px 100px 0 0 white;
+ color: rgb(247, 75, 75);
+
+}
+
+.c-border{
+  border: solid 4px black;
+}
