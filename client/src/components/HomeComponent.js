@@ -7,6 +7,7 @@ export default function HomeComponent() {
     return (
         <div>
             <NFLNews></NFLNews>
+        <LiveData/>
         </div>
     )
 }
