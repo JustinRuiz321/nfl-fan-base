@@ -138,7 +138,7 @@ padding: 2.5%;
 }
 
 .navLink:hover{
-box-shadow: inset 100px 100px 0 0 white;
+box-shadow: inset 100px 100px 100px 0 white;
  color: rgb(247, 75, 75);
 
 }
