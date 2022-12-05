@@ -14,7 +14,7 @@ const { gql } = require('apollo-server-express');
         _id: ID
         commentText: String
         createdAt: String
-        username: String
+        commentAuthor: String
     }
 
     type Auth {

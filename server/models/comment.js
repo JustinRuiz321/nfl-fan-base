@@ -18,8 +18,6 @@ const commentSchema = new Schema({
     },
            
 });
-// thoughtSchema.virtual('reactionCount').get(function () {
-//     return this.reactions.length
-// });
+
 const Comment = model('Comment', commentSchema);
 module.exports = Comment;
