@@ -13,7 +13,7 @@ const { gql } = require('apollo-server-express');
     type Comment {
         _id: ID
         commentText: String
-        createdAt: Date
+        createdAt: String
         username: String
     }
 
