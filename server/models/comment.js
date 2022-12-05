@@ -12,7 +12,7 @@ const commentSchema = new Schema({
         default: Date.now,
         get: (timestamp) => dateFormat(timestamp)
     },
-    username: {
+    commentAuthor: {
         type: String,
         required: true
     },
