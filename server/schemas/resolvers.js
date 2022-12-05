@@ -17,6 +17,20 @@ const resolvers = {
 
             throw new AuthenticationError('Not logged in');
         },
+        
+        users: async () => {
+            return User.find().populate('comments');
+        },
+          user: async (parent, { username }) => {
+            return User.findOne({ username }).populate('comments');
+        },
+          comments: async (parent, { username }) => {
+            const params = username ? { username } : {};
+            return Comment.find(params).sort({ createdAt: -1 });
+        },
+          comment: async (parent, { commentId }) => {
+            return Comment.findOne({ _id: commentId });
+        },
     },
 
     Mutation: {
