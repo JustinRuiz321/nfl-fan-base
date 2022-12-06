@@ -111,7 +111,7 @@ const SearchWeek = () => {
   }
   return (
     <div>
-      <div fluid className='text-light bg-dark SB-style'>
+      <div fluid className='text-light SB-style'>
         <Container>
           <h1 className='gfont'>Search the Weeks!</h1>
           <Form onSubmit={handleFormSubmit}>
