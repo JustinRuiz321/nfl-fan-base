@@ -189,7 +189,7 @@ box-shadow: inset 100px 100px 100px 0 white;
     width: 100%;
     padding: 6px 10px;
     margin: 10px 0;
-    border: 1px solid red;
+    border: 1px solid rgb(68, 0, 255);
     border-radius: 10px;
     box-sizing: border-box;
     display: block;
@@ -198,4 +198,9 @@ box-shadow: inset 100px 100px 100px 0 white;
   .C button{
     background-color: rgb(40, 153, 40);
     margin: 10px 0 10px 0;
+  }
+
+  .navSpan{
+    color: #54b3d6;
+
   }

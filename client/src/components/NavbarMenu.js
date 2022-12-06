@@ -16,7 +16,7 @@ export default function NavbarMenu() {
       <Navbar bg="dark">
         <Container>
           <Navbar.Brand className='text-white gfont'>
-            NFL-Fan-Base
+            <span className="navSpan">NFL</span> Fan-Base
           </Navbar.Brand>
           <Nav>
             <Nav.Link><NavLink to="/" className="navLink">Home</NavLink></Nav.Link>

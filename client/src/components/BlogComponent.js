@@ -7,11 +7,13 @@ export default function BlogComponent() {
 
 
   return (
+    <div>
+      <h1 className='HHC'>Fan-Base-Blog</h1>
     <div className='C card'>
       <section className='card-header'>
       <form>
         <div className='blog-m gfont'>
-        <label><h2>What's on your mind?</h2></label>
+        <label><h2>Let the sports world know!</h2></label>
         <textarea
         type="text"
         required
@@ -27,6 +29,7 @@ export default function BlogComponent() {
         </section>
       </form>
       </section>
+  </div>
   </div>
   )
 }
