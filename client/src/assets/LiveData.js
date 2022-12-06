@@ -9,7 +9,7 @@ import {
     Button, 
     Card, 
     Table,
-    CardColumns } from 'react-bootstrap';
+  } from 'react-bootstrap';
 
 
 const SearchWeek = () => {
