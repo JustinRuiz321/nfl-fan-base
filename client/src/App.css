@@ -163,3 +163,11 @@ box-shadow: inset 100px 100px 100px 0 white;
   .form-m{
     margin: 10px 0 10px 0;
   }
+
+  .BPost-center{
+    /* display: grid;
+    grid-template-columns: repeat(2 1fr); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }

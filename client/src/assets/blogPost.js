@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default function BlogPost() {
     return (
-      <div>
+      <div className='BPost-center'>
      <section class="card col-3 m-3">
         <section class="card-header">
             <h2 className='gfont'>Bob</h2>
