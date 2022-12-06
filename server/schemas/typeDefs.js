@@ -8,6 +8,13 @@ const { gql } = require('apollo-server-express');
         email: String
     }
 
+    type Comment {
+        _id: ID
+        commentText: String
+        createdAt: String
+        commentAuthor: String
+    }
+
     type Auth {
         token: ID!
         user: User
@@ -15,11 +22,17 @@ const { gql } = require('apollo-server-express');
 
     type Query {
         me: User
+        users: [User]
+        user(username: String!): User
+        comments(username: String): [Comment]
+        comment(commentId: ID!): Comment
     }
 
     type Mutation {
         login(username: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
+        addComment(commentText: String!): Comment
+        removeComment(commentId: ID!): Comment
     }
 `;
 
